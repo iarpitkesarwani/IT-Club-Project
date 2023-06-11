@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IT Club</title>
+  <script src="https://kit.fontawesome.com/803f559754.js" crossorigin="anonymous"></script><style>
+
+
+		
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+/* Header */
+header {
+    background-color: rgb(145, 239, 3);
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#home{
+    text-align: justify;
+    text-decoration: dashed;
+    text-overflow: inherit;
+    line-break: auto;
+}
+
+.instagram{
+    text-align: right;
+    float: right;
+}
+
+#objective{
+    text-align: justify;
+}
+
+.myanimation{
+  animation: animate 3s linear infinite;
+}
+@keyframes  animate {
+  0% 
+  {
+
+    transform: translateY(-6px);
+    transform: scale(.9);
+
+  }
+  50%
+  {
+    transform: translateY(6px);
+    transform: scale(1);
+  }
+
+  100%{
+    transform: translateY(-6px);
+    transform: scale(.9);
+  }
+  
+}
+        .photo-container1 {
+			text-align: left;
+		}
+        .photo-container2 {
+			text-align: right;
+		}
+
+        .photo-container3 {
+			text-align: left;
+		}
+
+        .photo-container4 {
+			text-align: right;
+		}
+
+        .Shahenvaz{
+            max-width: 25%;
+            height: 250px;
+            width: 240px;
+            float: left;
+        }
+
+        #Shahenvaz{
+            text-align: justify;
+            text-decoration: dashed;
+            text-transform: inherit;
+            text-rendering: auto;
+        }
+
+        .Sanjana{
+            max-width: 25%;
+            height: 250px;
+            width: 240px;
+            float: right;
+        }
+
+        #Sanjana{
+            text-align: justify;
+            text-decoration: dashed;
+            text-transform: inherit;
+            text-rendering: auto;
+        }
+
+        .Manish{
+            max-width: 25%;
+            height: 250px;
+            width: 240px;
+            float: left;
+        }
+
+        #Manish{
+            text-align: justify;
+            text-decoration: dashed;
+            text-transform: inherit;
+            text-rendering: auto;
+        }
+
+        .Vaibhav{
+            max-width: 25%;
+            height: 250px;
+            width: 240px;
+            float: right;
+        }
+
+        #Vaibhav{
+            text-align: justify;
+            text-decoration: dashed;
+            text-transform: inherit;
+            text-rendering: auto;
+        }
+
+        .Ambrish{
+            max-width: 25%;
+            height: 250px;
+            width: 240px;
+            float: left;
+        }
+
+        #Ambrish{
+            text-align: justify;
+            text-decoration: dashed;
+            text-transform: inherit;
+            text-rendering: auto;
+        }
+		.photo {
+			max-width: 25%;
+			height: 250px;
+            width: 240px;
+
+		}
+		.name1 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+            text-align: left;
+		}
+        .name2 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+            text-align: right;
+		}
+        .name3 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+            text-align: left;
+		}
+        .name4 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+            text-align: right;
+		}
+        #carouselExampleIndicators
+{
+  position: relative;
+}
+
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.myshadow-effect
+{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: .5s;
+}
+.myshadow-effect:hover
+{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+#glass
+{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+position: absolute;
+  z-index: 2;
+  top: 15%;
+  left: 8%;
+  width: 100%;
+  height:70% ;
+  background: #0002;
+  color: #efefef !important;
+}
+
+
+#con-topic
+{
+  color: #89ff89 !important;
+}
+
+@media(max-width:650px)
+{
+  #glass
+  {
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background: #0005;
+  }
+   #glass div
+   {
+    padding-top: 20px ;
+   }
+}
+
+	</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+        <h1></h1>
+		<center> <h2>IT Club UIM, Dept. of Computer Application</h2> </center>
+    <center> <h5>Naini Prayagraj</h5> </center> 
+    <nav>
+			<ul>
+				<li><a href="#home"><h6 style="color: rgb(253, 104, 11);">HOME</h6></a></li>
+				<li><a href="#objective"><h6 style="color: rgb(253, 104, 11);">OBJECTIVE</h6></a></li>
+				<li><a href="#committee"><h6 style="color: rgb(253, 104, 11);">COMMITTEE MEMBERS</h6></a></li>
+				<li><a href="#gallery"><h6 style="color: rgb(253, 104, 11);">GALLERY</h6></a></li>
+				<li><a href="#contact"><h6 style="color: rgb(253, 104, 11);">CONTACTS</h6></a></li>
+        <li class="instagram"><a style="text-decoration: none;" href="https://instagram.com/it_club_uim?igshid=YmMyMTA2M2Y=">&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #fe0b24;"></i></a>
+			</ul>
+		</nav>
+	</header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="Photos/Slider1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Photos/Slider22.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Photos/Slider33.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!-- <div id="glass" class="container  text-center">
+          <div class="row">
+            <div class="col display-4 pt-5">IT CLUB-<span  class="display-3">2021-23</span></div>
+          </div>
+          <div class="row p-2">
+            <div class="col display-6" id="con-topic" style="font-weight: bold !important;">UIM</div>
+          </div>
+          <!-- <div class="row"> -->
+            <!-- <div class="col display-6" >Date: APR 12, 2023 UIM, Allahabad</div> -->
+          <!-- </div> --> -->
+          
+        </div>
+      </div>
+      </div>
+
+	<main>
+		<section id="home">
+
+      <center>
+        <h3 class=" bg-dark text-light p-2">Welcome to the IT Club</h3> <br>
+      </center>
+			<p>The Information Technology (IT) Club gives students a chance to explore about numerous IT related themes outside the classroom learning to encourage a broader awareness and understanding of technology. </p>
+      <p>The IT Club is created with the intention of bridging the gap between education and industry. </p>
+      <p>The institution aims to give students a platform to exchange and develop their ideas via industry interaction, broaden their perspectives on the rapidly evolving sector of information technology. </p>
+      <p>The goal of the IT Club is to provide a setting where students may exchange information and deepen it, enhancing their technical and cognitive abilities overall. </p>
+      <p>The club also strives to foster personality development via real-world contacts and live events.</p>
+		</section>
+
+        <hr>
+
+		<section id="objective">
+      <center>
+        <h3 class=" bg-dark text-light p-2">Objectives</h3> <br>
+      </center>
+			<p>
+			 <ul> 
+                <li> Experimental experience by peer learning, by doing their hobbies which is required by learner through their creativity. </li>	
+                <li> The trail of activities of the 2nd year student’s will be passed on to the students of 1st year automatically.</li>
+                <li> Provide opportunities for innovation.</li>
+                <li> 2 periods / week w.e.f. beginning of 3rd semester will be allocated.</li>  
+                <li> The events may be conducted in the Conference hall and/or in the Computer center.</li>
+                <li> Professional activities as per the concern of the students will be entertained.</li>
+            </ul> 
+            </p>
+		</section>
+
+        <hr>
+        
+        <div class="container-fluid section myanimation" style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+          <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+            <div class="p-2 bd-highlight">
+              <div class="card" style="width: 13rem; transform: scale(.8);">
+                <img src="Photos/Principal Sir.jpg" class="card-img-top " alt="...">
+                <div class="card-body text-center">
+                 <h4 class="card-title" style="color: chocolate;">Prof. Dr. K.K Malviya</h4>
+                 <h6 class="card-text text-justify" style="color: black;">(Principal)</h6>
+                </div>
+              </div>  
+            </div>
+            <div class="p-2 bd-highlight text-justify pt-5" style="text-align: justify;">As a principal, I am pleased to see the positive feedback loop of our school's new reading program. The more students read, the more they improve their reading skills, which motivates them to read even more. This leads to increased literacy rates and academic success. We will continue to support and improve this program to ensure that our students receive the best possible education.
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+		<section id="committee">
+      <center>
+			<h3 class=" bg-dark text-light p-2"> Committee Members (MCA III Sem - 2022-2023)</h3><br>
+      </center>
+                <center><img src="Photos/Ashutoshsir.jpg" alt="Ashutosh Sir " height="390px"></center>
+                <center><h4 style="color: blue"> Mr. Ashutosh Pandey Sir- Event Coordinator</h4></center> 
+
+                <div class="myshadow-effect container-fluid section mt-4"  >
+                    <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                      <div class="p-2 bd-highlight">
+                        <div class="card" style="width: 12rem; transform: scale(.8);">
+                          <img src="Photos/Shahenvaz2.jpg" class="card-img-top " alt="...">
+                          <div class="card-body text-center">
+                           <h5 class="card-title">Shahenvaz Khan</h5>
+                           <p class="card-text text-justify">(President)</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="p-2 bd-highlight text-justify pt-5" style="text-align: justify;">Hello Everyone, I am Shahenvaz Khan, I am here to sharing my experience which is gain in during President.
+                        <p> I am always learn something new here through the guidance of Mr. Ashutosh Pandey Sir who is help me a lot. <br>
+                        I can do my best and this IT Club is just like a life changing Environment to me. <br> <br>~Thank You so much  </p>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+
+
+                  <div class="myshadow-effect container-fluid section mt-4"  >
+                    <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                      <div class="p-2 bd-highlight">
+                        <div class="card" style="width: 12rem; transform: scale(.8);">
+                        <img src="Photos/Sanjana.jpg" class="card-img-top " alt="...">
+                          <div class="card-body text-center">
+                           <h5 class="card-title">Sanjana Singh</h5>
+                           <p class="card-text text-justify">(Vice President)</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="p-2 bd-highlight text-justify pt-5" style="text-align: justify;">Hello Everyone, I am Sanjana Singh Vice President of IT Club, I am always wanted to change my life from the Average student to Topper Student but this is IT Club realizes me that Topper is not necessary quality of a good person 
+                        <p> I would like to Thank Mr. Ashutosh Pandey Sir who give me the Right Direction  <p> ~ Thank you so much</p></p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="myshadow-effect container-fluid section mt-4"  >
+                    <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                      <div class="p-2 bd-highlight">
+                        <div class="card" style="width: 12rem; transform: scale(.8);">
+                        <img src="Photos/Manish.jpg" class="card-img-top " alt="...">
+                          <div class="card-body text-center">
+                           <h5 class="card-title">Manish yadav</h5>
+                           <p class="card-text text-justify">(Secretary)</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="p-2 bd-highlight text-justify pt-5" style="text-align: justify;">Hello Everyone, I am Manish Yadav In the era of Artificial intelligence and Data Science there is always a Scope of learning and improvement every second so try to inspire innovate and ignite yourself that definetely enchance your IT and Technical Skills in this Journey of Holistic learning IT Club is like Magic <br><br> ~Thank you so Much </div>
+                    </div>=
+                  </div>
+
+                  <div class="myshadow-effect container-fluid section mt-4"  >
+                    <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                      <div class="p-2 bd-highlight">
+                        <div class="card" style="width: 12rem; transform: scale(.8);">
+                        <img src="Photos/Vaibhav1.jpg" class="card-img-top " alt="...">
+                          <div class="card-body text-center">
+                           <h5 class="card-title">Vaibhav Jadhav</h5>
+                           <p class="card-text text-justify">(Deputy Secreatry)</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="p-2 bd-highlight text-justify pt-5" style="text-align: justify;">Hello Everyone, I am Vaibhav Jadhav Deputy Secretary of i am feeling very grateful because i am the part of this great IT Club. I always thank to Mr. Ashutosh Pandey Sir who will give me right direction to achive my goals. I am always learn something new and amazing here which can be help in my career. <br> <br> ~Thank you so Much. </div>
+                    </div>
+                  </div>
+
+                <hr>
+
+                <section id="committee">
+                  <center>
+                    <h3 class=" bg-dark text-light p-2">Committee Members (MCA IV Sem - 2022-2023)</h3><br>
+                  </center>
+                        <center><img src="Photos/Ashutoshsir.jpg" alt="Ashutosh Sir " height="390px"></center>
+                        <center><h4 style="color: blue;"> Mr. Ashutosh Pandey Sir- Event Coordinator</h4></center> 
+
+                        <div class="myshadow-effect container-fluid section mt-4"  >
+                          <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                            <div class="p-2 bd-highlight">
+                              <div class="card" style="width: 12rem; transform: scale(.8);">
+                                  <img src="Photos/Ambrish1.jpg" class="card-img-top " alt="...">
+                                  <div class="card-body text-center">
+                                   <h5 class="card-title">Ambrish Upadhyay</h5>
+                                   <p class="card-text text-justify">(President)</p>
+                                  </div>
+                                </div>  
+                              </div>
+                              <div class="p-2 bd-highlight text-justify pt-5" style="text-align: justify;">Hello Everyone, I am Ambrish Upadhyay, I am here to sharing my experience which is gain in during President.
+                                <p> I am always learn something new here. Now i am not capable of doing this kind of work. This is only possible with the proper and correct guidance of Mr. Ashutosh Pandey Sir who can help me a lot.  <br> <br>~Thank You so much  </p>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="myshadow-effect container-fluid section mt-4"  >
+                            <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                              <div class="p-2 bd-highlight">
+                                <div class="card" style="width: 12rem; transform: scale(.8);">
+                                  <img src="Photos/Rupali.jpg" class="card-img-top " alt="...">
+                                  <div class="card-body text-center">
+                                   <h5 class="card-title">Rupali Verma</h5>
+                                   <p class="card-text text-justify">(Vice President)</p>
+                                  </div>
+                                </div>  
+                              </div>
+                              <div class="p-2 bd-highlight text-justify pt-5">Hello Everyone, I am Rupali Verma, I am glad to thank Mr. Ashutosh pandey Sir who can give me this opportunity to contribute to the IT Club. I am feeling very grateful because I am the Vice President of this IT Club. <br> <br> ~ Thank you so Much </div>
+                            </div>
+                          </div>
+        
+                          <div class="myshadow-effect container-fluid section mt-4"  >
+                            <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                              <div class="p-2 bd-highlight">
+                                <div class="card" style="width: 12rem; transform: scale(.8);">
+                                  <img src="Photos/Rahul.jpg" class="card-img-top " alt="...">
+                                  <div class="card-body text-center">
+                                   <h5 class="card-title">Rahul</h5>
+                                   <p class="card-text text-justify">(Secreatry)</p>
+                                  </div>
+                                </div>  
+                              </div>
+                              <div class="p-2 bd-highlight text-justify pt-5">Hello Everyone, I am Rahul, I am here to sharing my experience which is gain in during Secretary.
+                                <p> I am always learn something new here. Now i am not capable of doing this kind of work. This is only possible with the proper and correct guidance of Mr. Ashutosh Pandey Sir who can help me a lot.  <br> <br>~Thank You so much  </p></div>
+                            </div>
+                          </div>
+        
+                        
+                          <div class="myshadow-effect container-fluid section mt-4"  >
+                            <div class="d-flex flex-row bd-highlight justify-content-around mb-3 ">
+                              <div class="p-2 bd-highlight">
+                                <div class="card" style="width: 12rem; transform: scale(.8);">
+                                  <img src="Photos/Anjali1.jpg" class="card-img-top " alt="...">
+                                  <div class="card-body text-center">
+                                   <h5 class="card-title">Anjali Verma</h5>
+                                   <p class="card-text text-justify">(Deputy Secreatry)</p>
+                                  </div>
+                                </div>  
+                              </div>
+                              <div class="p-2 bd-highlight text-justify pt-5"> Hello Everyone, I am Anjali Verma Deputy Secreatry of IT Club, I am glad to thank Mr. Ashutosh pandey Sir who can give me this opportunity to contribute to the IT Club. I am feeling very grateful because I am the Deputy Secreatry of this IT Club. <br> <br> ~ Thank you so Much </div>
+                            </div>
+                          </div>
+        </section>   
+
+             <hr>
+
+
+        <section id="Event ">
+               <center> <h3 class=" bg-dark text-light p-2" > IT Club Winners Sem- III</h3></center> 
+               
+        </section>
+
+        <center> 
+                
+          <a href="Event1.html">
+            <button class="button-82-pushable" role="button">
+             <span class="button-82-shadow"></span>
+             <span class="button-82-edge"></span>
+             <span class="button-82-front text">Event-1</span> 
+            </button>
+          </a> 
+          
+          <a href="Event2.html">
+            <button class="button-82-pushable" role="button">
+             <span class="button-82-shadow"></span>
+             <span class="button-82-edge"></span>
+             <span class="button-82-front text">Event-2</span> 
+            </button>
+          </a> 
+          
+          <a href="Event3.html">
+            <button class="button-82-pushable" role="button">
+             <span class="button-82-shadow"></span>
+             <span class="button-82-edge"></span>
+             <span class="button-82-front text">Event-3</span> 
+            </button>
+          </a>  <br><br>
+         
+        </center>
+                 
+        <center>
+          <a href="Event4.html">
+            <button class="button-82-pushable" role="button">
+             <span class="button-82-shadow"></span>
+             <span class="button-82-edge"></span>
+             <span class="button-82-front text">Event-4</span> 
+            </button>
+          </a> 
+          
+          
+          <a href="Event5.html">
+            <button class="button-82-pushable" role="button">
+             <span class="button-82-shadow"></span>
+             <span class="button-82-edge"></span>
+             <span class="button-82-front text">Event-5</span> 
+            </button>
+          </a>  <br><br>
+          
+        </center>
+                 <h5><a href="CompleteDetails.html">Click Here</a> to Check Complete Details </h5>
+
+         </section>
+
+        <hr>
+        <section id="Event">
+            <center> <h3 class=" bg-dark text-light p-2"> IT Club Winners Sem- IV </h3></center> <br>
+
+            <center>
+              <a href="Event-1.html">
+                <button class="button-82-pushable" role="button">
+                 <span class="button-82-shadow"></span>
+                 <span class="button-82-edge"></span>
+                 <span class="button-82-front text">Event-1</span> 
+                </button>
+              </a>  
+              <a href="Event-2.html">
+                <button class="button-82-pushable" role="button">
+                 <span class="button-82-shadow"></span>
+                 <span class="button-82-edge"></span>
+                 <span class="button-82-front text">Event-2</span> 
+                </button>
+              </a> 
+            </center>
+
+        </section>
+
+     <hr>
+
+
+		<section id="gallery">
+      <center>
+        <h3 class=" bg-dark text-light p-2">Gallery Sem- III</h3> <br>
+      </center>
+			<h6>Here are some images and videos of the IT Club Events :</h6> <br>
+       <center>
+            <img src="Photos/Photo2.jpg" alt="Photo2" height="190px" width="377px" > 
+            <img src="Photos/Photo1.jpg" alt="Photo1" height="190px" width="377px"> 
+       </center>
+       <center>
+           <img src="Photos/Photo3.jpg" alt="Photo3" height="190px" width="377px"> 
+           <img src="Photos/Photo4.jpg" alt="Photo4" height="190px" width="377px">
+       </center>
+            
+            <center>
+                <img src="Photos/Photo5.jpg" alt="Photo4" height="380px" width="758px">
+            </center>
+	
+		</section>
+
+        <hr>
+        
+        <section id="gallery">
+          <center>
+            <h3 class=" bg-dark text-light p-2">Gallery Sem- IV</h3> <br>
+          </center>
+		      	 <h6>Here are some images and videos of the IT Club Events : </h6><br>
+            <center>
+            <img src="Photos/Photo-1.jpg" alt="Photo-1" height="190px" width="377px" > 
+            <img src="Photos/Photo-2.jpg" alt="Photo-2" height="190px" width="377px">
+            </center>
+            <center>
+                <img src="Photos/Photo-3.jpg" alt="Photo-3" height="190px" width="377px" > 
+                <img src="Photos/Photo-4.jpg" alt="Photo-4" height="190px" width="377px">
+            </center>
+        
+            <center> 
+                <video width="760" height="400" controls>
+                    <source src="Videos/Video1.mp4" type="video/mp4">
+                </video>  
+            </center>
+            <center>
+              <img src="Photos/Event2Gallery1.jpg" alt="Photo-3" height="190px" width="377px" > 
+              <img src="Photos/Event2Gallery2.jpg" alt="Photo-4" height="190px" width="377px">
+          </center>
+      
+		</section>
+    <hr>
+
+		<section id="contact">
+      <center>
+        <h3 class=" bg-dark text-light p-2">Contact Us</h3><br>
+      </center>
+		      	<h6>Event Coordinator : Mr. Ashutosh Pandey Sir</h6>
+            <h6>Mobile Number     : 8382975454</h6>
+            <h6>
+              To visit IT Club Instagram Page Click on : <a style="text-decoration: none;" href="https://instagram.com/it_club_uim?igshid=YmMyMTA2M2Y=">&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #fe0b24;"></i></a>
+            </h6>
+           
+		</section>
+	</main>a
+	<footer>
+		<p>Design and Developed By Arpit Kesarwani MCA Batch: 2021-2023</p>
+	</footer>
+</body>
+</html>
